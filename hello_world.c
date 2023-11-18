@@ -2,7 +2,10 @@
 #include "pico/stdlib.h"
 
 int main(){
-    setup_default_uart();
-    puts("Hello, world!");
+    stdio_init_all();
+    while(true){
+        puts("Hello, world!");
+        sleep_ms(1000);
+    }
     return 0;
 }
